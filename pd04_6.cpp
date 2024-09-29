@@ -1,8 +1,6 @@
 #include<iostream>
-#include<windows.h>
 using namespace std;
 
-void gotoxy(int x,int y);
 void H();
 void A();
 void S();
@@ -18,30 +16,62 @@ main()
 	N();
 }
 
-void gotoxy(int x,int y)
-{
-COORD coordinates;
-coordinates.X = x;
-coordinates.Y = y;
-SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coordinates);
-}
 
 void H()
+
 {
-cout<< "H"<<endl;
+
+    cout << "##     ##" << endl;
+    cout << "##     ##" << endl;
+    cout << "##     ##" << endl;
+    cout << "#########" << endl;
+    cout << "#########" << endl;
+    cout << "##     ##" << endl;
+    cout << "##     ##" << endl;
+    cout << "##     ##" << endl;
+
+
 }
 
 void A()
+
 {
-cout<< "A"<<endl;
+
+    cout << "    #    " << endl;
+    cout << "  #   #  " << endl;
+    cout << " #     # " << endl;
+    cout << " ####### " << endl;
+    cout << " #     # " << endl;
+    cout << " #     # " << endl;
+    cout << " #     # " << endl;
+
 }
 
 void S()
+
 {
-cout<< "S"<<endl;
+	
+    cout << " ####### " << endl;
+    cout << "#       #" << endl;
+    cout << "#        " << endl;
+    cout << " ####### " << endl;
+    cout << "        #" << endl;
+    cout << "#       #" << endl;
+    cout << " ####### " << endl;
+
 }
 
+
 void N()
+
 {
-cout<< "N"<<endl;
+    cout << "##     ##" << endl;
+    cout << "###    ##" << endl;
+    cout << "####   ##" << endl;
+    cout << "## #   ##" << endl;
+    cout << "##  #  ##" << endl;
+    cout << "##   # ##" << endl;
+    cout << "##    ###" << endl;
+    cout << "##     ##" << endl;
+
 }
